@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>Practical Natural Language Processing</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--       <meta name="description" content="Practical Natural Language Processing" /> -->
+      <!-- favicon -->
+<!--       <link rel="shortcut icon" href="images/favicon.ico"> -->
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Practical Natural Language Processing - O'Reilly Media" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://cdn.oreillystatic.com/oreilly/images/oreilly-social-icon-120.png" />
+  <meta property="og:image" content="https://cdn.oreillystatic.com/oreilly/images/oreilly-social-icon-200.png" />
+
+<link rel="icon" href="https://www.oreilly.com/favicon.ico"/>
+
+
+      <!--Slider-->
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+      <!-- css -->
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <!-- Loader -->
+      <div id="preloader">
+         <div id="status">
+            <div class="spinner">
+               <div class="dot1"></div>
+               <div class="dot2"></div>
+            </div>
+         </div>
+      </div>
+      <!--Navbar Start-->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
+         <div class="container">
+            <!-- LOGO -->
+            <a class="navbar-brand logo" href="index.html">
+                <img src="images/logo.png" alt="" class="" height="21">
+            </a>
+            <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+               <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                  <li class="nav-item active">
+                     <a href="#home" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#about-book" class="nav-link">About the book</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#testimonials" class="nav-link">Testimonials</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#blog" class="nav-link">Blog (coming soon)</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Navbar End -->
+      <!-- Hero Start -->
+      <section class="hero-1-bg position-relative bg-dark d-flex align-items-center" id="home">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-7">
+                  <div class="hero-title pr-lg-5">
+                     <h1 class="hero-1-title mb-4 text-light">Practical Natural 
+                        <span class="text-light ">Language Processing</span>
+                     </h1>
+                     <p class=" text-light " >Sowmya Vajjala, Bodhisattwa Majumder, Anuj Gupta, Harshit Surana</p>
+                     <hr class="hr-light">
+                     <p class="text-light mb-2 ">Endorsed by <span class="font-weight-medium" >Zachary Lipton, Sebastian Ruder & Marc Najork </span></p>
+                     <p class="text-light mb-4 pb-2 ">Foreword by <span class="font-weight-medium" > Julian McAuley</span></p>
+                     <a href="#testimonials" class="btn btn-warning">Read the testimonials</a>
+                  </div>
+               </div>
+               <div class="col-lg-5">
+                  <div class="mt-5 mt-lg-0">
+                     <a href="#"><img src="images/book.png" class="img-responsive" style="    max-width: 400px;margin:  0 auto;display: block;margin-bottom: 3%;"></a>
+                     <div class="row">
+                        <!-- <span class="text-light"><b>WARNING:</b> third-party sellers sell counterfeit on Amazon. <a class="js-scroll-trigger text-light " href="#buythebook" ><b>How to buy a genuine copy?</b></a></span> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Hero End -->
+      <!-- About book Start -->
+      <section class="section bg-light " id="about-book">
+         <div class="container">
+            <div class="row justify-content-left">
+               <div class="col-lg-12 col-md-8">
+                  <div class="title text-left mb-5">
+                     <h1 class="hero-1-title mb-4 text-dark"> Practical NLP Is All You Need
+                     </h1>
+                     <p class="lead">
+                        <strong>This book is your guide to build, iterate and scale NLP systems and to tailor them for various industry verticals</strong>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row align-items-center">
+               <div class="col-md-12 ">
+                  <div class=" mt-5 mt-sm-0 mb-4">
+                     <!-- <p class="lead">
+                        This book is your guide to build, iterate and scale NLP systems in a business setting and to tailor them for various industry verticals.
+                        </p> -->
+                     <h5 class="font-weight-bold text-dark">Increase your depth
+                     </h5>
+                     <p class="lead">
+                        Consider the task of building a chatbot or text classification system at your organization. In the beginning there may be little or no data to work with. At this point a basic solution using rule based systems or traditional machine learning will be apt. As you accumulate more data, more sophisticated ML techniques (which are often data intensive) can be used including deep learning. At each step of this journey there are dozens of alternative approaches one can take. This book will help you navigate this maze of options.
+                     </p>
+                     <h5 class="font-weight-bold text-dark">Expand your breadth
+                     </h5>
+                     <p class="lead">
+                        You will also learn to adapt your solutions for different industry verticals like healthcare, social media and retail. Moreover, you will learn about specific caveats you will encounter in each. You will learn how to analyze health records, detect fake news, extract attributes from e-commerce products and much more.
+                        <!-- </p>
+                           <p class="lead">Overall diagram -->
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- About book End -->
+      <!-- Testimonial Start -->
+      <section class="section bg-dark testimonials" id="testimonials">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-lg-6 col-md-8">
+                  <div class="title text-center mb-5">
+                     <h1 class="hero-1-title mb-4 text-light">What the experts say </h1>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-3">
+                  <div class="author-item text-center">
+                     <img src="images/quotes/zach.jpg">
+                     <h4 class="text-light"><a href="http://zacklipton.com/">Zachary Lipton</a></h4>
+                     <p class="text-light mb-0"> Scientist at Amazon AI</p>
+                     <p class=" text-light mb-0"> 
+                        Author of Dive into Deep Learning
+                     </p>
+                     <hr class="hr-light">
+                     <p class="more text-light">
+                        Practical NLP focuses squarely on an overlooked demographic: the practitioners and business leaders in industry!           
+                     </p>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="author-item text-center">
+                     <img src="images/quotes/ruder.jpg">
+                     <h4 class="text-light"><a href="https://ruder.io/">Sebastian Ruder</a></h4>
+                     <p class="text-light mb-0"> Scientist, Google DeepMind </p>
+                     <p class=" text-light mb-0"> 
+                        Author of newsletter NLP News
+                     </p>
+                     <hr class="hr-light">
+                     <p class="more text-light">
+                        This book does a great job bridging the gap between natural language processing research and practical applications. 
+                     </p>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="author-item text-center">
+                     <img src="images/quotes/marc.jpg">
+                     <h4 class="text-light"><a href="http://marc.najork.org">Marc Najork</a></h4>
+                     <p class="text-light mb-0"> Director, Google AI</p>
+                     <p class=" text-light mb-0"> 
+                        ACM & IEEE Fellow
+                     </p>
+                     <hr class="hr-light">
+                     <p class="more text-light">
+                        This book offers the best of both worlds: textbooks and 'cookbooks'. If you would like to go from zero to one in NLP, this book is for you! 
+                     </p>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="author-item text-center">
+                     <img src="images/quotes/monojit.jpg">
+                     <h4 class="text-light"><a href="https://www.microsoft.com/en-us/research/people/monojitc/">Monojit Choudhury</a></h4>
+                     <p class="text-light mb-0"> Principal Researcher, Microsoft </p>
+                     <p class=" text-light mb-0"> 
+                        Faculty at IIT Kharagpur
+                     </p>
+                     <hr class="hr-light">
+                     <p class="more text-light">
+                        This book is a must for all aspiring NLP engineers, entrepreneurs who want to build companies around language technologies.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <hr>
+            <div class="row">
+               <div class="col-lg-3">
+                  <div class="author-item text-center">
+                     <img src="images/quotes/vinayak.jpg">
+                     <h4 class="text-light"><a href="https://www.linkedin.com/in/vinayakh/">Vinayak Hegde</a></h4>
+                     <p class="text-light mb-0"> CTO-in-Residence</p>
+                     <p class=" text-light mb-0"> 
+                        Microsoft For Startups
+                     </p>
+                     <hr class="hr-light">
+                     <p class="more text-light">
+                        There is much hard-fought practical advice from the trenches. A must-read for engineers building NLP applications.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="author-item text-center">
+                     <img src="images/quotes/mengting.jpg">
+                     <h4 class="text-light"><a href="https://mengtingwan.github.io/">Mengting Wan</a></h4>
+                     <p class="text-light mb-0"> Data Scientist (ML & NLP) at Airbnb
+                     </p>
+                     <p class=" text-light mb-0"> 
+                        Microsoft Research Fellow
+                     </p>
+                     <hr class="hr-light">
+                     <p class="more text-light">
+                        I feel this is not only an essential book for NLP practitioners, it is also a valuable reference for the research community. 
+                     </p>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="author-item text-center">
+                     <img src="images/quotes/sid.jpg">
+                     <h4 class="text-light"><a href="https://www.linkedin.com/in/siddharth-sharma-31140210/">Siddharth Sharma</a></h4>
+                     <p class="text-light mb-0"> ML Engineer
+                     </p>
+                     <p class=" text-light mb-0"> 
+                        Facebook
+                     </p>
+                     <hr class="hr-light">
+                     <p class="more text-light">
+                        The authors achieved a rare feat by simplifying the esoteric art of design and architecture of production quality ML systems.
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="author-item text-center">
+                     <img src="images/quotes/ed.jpg">
+                     <h4 class="text-light"><a href="https://www.linkedin.com/in/e10is/?originalSubdomain=ca">Ed Harris</a></h4>
+                     <p class="text-light mb-0"> CEO and co-founder at 
+                     </p>
+                     <p class=" text-light mb-0"> 
+                        SharpestMinds (YC W18)
+                     </p>
+                     <hr class="hr-light">
+                     <p class="more text-light">
+                        This book gives a consolidated look at modern practice, starting from an MVP and building up to examples for sophisticated use cases.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <hr>
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="author-item text-center">
+                     <img src="images/quotes/julian.jpg">
+                     <h4 class="text-light"><a href="https://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a></h4>
+                     <p class="text-light mb-0"> Professor at UC San Diego
+                     </p>
+                     <hr class="hr-light">
+                     <p class="more text-light">
+                        I am excited by the end-to-end approach taken in this book, which make it useful for a range of scenarios and help readers to work with the labyrinth of possible options while building NLP applications. I was thrilled to hear about efforts by Bodhisattwa, Sowmya, Anuj and Harshit to write a book on NLP. They have a wide experience in scaling NLP including at early-stage startups, the MIT Media Lab, Microsoft Research, and Google AI. This book is ideal both as a first resource to discover the field of natural language processing and a guide for seasoned practitioners looking to discover the latest developments in this exciting area. 
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <a href="testimonial.html" class="btn btn-warning mt-4 text-center">Read full foreword & testimonials</a>
+         </div>
+         </div>
+      </section>
+      <!-- Testimonial End -->
+
+
+
+
+      <!-- Book for Start -->
+      <section class="section">
+         <div class="container">
+         <div class="row align-items-center">
+            <div class="col-lg-12">
+               <div class="hero-title pr-lg-5">
+                  <h1 class="hero-1-title mb-4 text-dark">We wrote the book for</h1>
+                  <!-- <p class="text-dark mb-4 pb-2">We wrote the book for:</p> -->
+                  <ul class="text-dark mb-4 pb-2">
+                     <li class="lead">a software engineer or a data scientist who needs to build real-world NLP systems
+                     </li>
+                     <li class="lead">a machine learning engineer who has to iterate and scale NLP systems
+                     </li>
+                     <li class="lead">a product manager who needs to understand NLP and how it can be applied to their domain
+                     </li>
+                     <li class="lead">a business leader who wants to start a new venture based on NLP or incorporate the cutting edge of NLP in existing products
+                     </li>
+                  </ul>
+                  <p class="lead text-dark mb-4 pb-2">Please note that readers pursuing cutting-edge research in NLP may find some sections of the book rudimentary as we do not cover in-depth theoretical and technical details related to NLP concepts. Moreover, we expect the readers to follow the respective documentations for various frameworks we use in our code examples.</p>
+                  <a href="" class="btn btn-warning">Know what you will learn</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Book for End -->
+
+
+
+            <!-- About Author Start -->
+
+      <section class="section bg-dark author" id="features">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-lg-6 col-md-8">
+                  <div class="title text-center mb-5">
+                     <h1 class="hero-1-title mb-4 text-light">About the authors </h1>
+                  </div>
+               </div>
+            </div>
+            <div class="row align-items-center mb-4">
+               <div class="col-md-6">
+                  <h4 class="text-light">Sowmya Vajjala</h4>
+                  <ul class="social-list">
+                     <li class="list-inline-item"><a href="https://nishkalavallabhi.github.io/"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                     <li class="list-inline-item"><a href="https://www.linkedin.com/in/sowmya-vajjala-2a38734/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                     <li class="list-inline-item"><a href="https://twitter.com/adyantalamadhya"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                     <li class="list-inline-item"><a href="https://scholar.google.com/citations?user=e4UbD1UAAAAJ&hl=en"><i class="ai ai-google-scholar" aria-hidden="true"></i></a></li>
+                  </ul>
+                  <hr class="hr-light">
+                  <p class="text-light mb-3 f-15">Sowmya Vajjala has a PhD in Computational Linguistics from University of Tubingen, Germany. She currently works as a research officer at National Research Council, Canada’s largest federal research and development organization. Her past work experience spans both academia as a faculty at Iowa State University, USA and industry at Microsoft Research and The Globe and Mail.</p>
+               </div>
+               <div class="col-md-6">
+                  <h4 class="text-light">Bodhisattwa Majumder</h4>
+                  <ul class="social-list">
+                     <li class="list-inline-item"><a href="http://www.majumderb.com/"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                     <li class="list-inline-item"><a href="https://www.linkedin.com/in/majumderb/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                     <li class="list-inline-item"><a href="https://twitter.com/mbodhisattwa"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                     <li class="list-inline-item"><a href="https://scholar.google.com/citations?user=DKXMutUAAAAJ&hl=en&oi=ao"><i class="ai ai-google-scholar" aria-hidden="true"></i></a></li>
+                  </ul>
+                  <hr class="hr-light">
+                  <p class="text-light mb-3 f-15">Bodhisattwa Majumder is a doctoral candidate in NLP and ML at UC San Diego. Earlier he studied at IIT Kharagpur where he graduated summa cum laude. Previously, he built large-scale NLP systems at Google AI Research and Microsoft Research which went into products serving millions of users. Currently, he is also leading his university team in the Amazon Alexa Prize for 2019-2020.</p>
+               </div>
+            </div>
+            <div class="row align-items-center">
+               <div class="col-md-6">
+                  <h4 class="text-light">Anuj Gupta</h4>
+                  <ul class="social-list">
+                     <li class="list-inline-item"><a href="https://www.linkedin.com/in/anujgupta-82/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                     <li class="list-inline-item"><a href="https://twitter.com/anujgupta82"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                     <li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=en&user=ljogLikAAAAJ"><i class="ai ai-google-scholar" aria-hidden="true"></i></a></li>
+                  </ul>
+                  <hr class="hr-light">
+                  <p class="text-light mb-3 f-15">Anuj Gupta has built NLP and ML systems at Fortune 100 companies as well as startups as a senior leader. He has incubated and led multiple ML teams in his career. He studied computer science at IIT Delhi and IIIT Hyderabad. He is currently Head of Machine Learning and Data Science at Vahan Inc. Above all, he is a father and husband.</p>
+               </div>
+               <div class="col-md-6">
+                  <h4 class="text-light">Harshit Surana</h4>
+                  <ul class="social-list">
+                     <li class="list-inline-item"><a href="http://harshitsurana.com/"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                     <li class="list-inline-item"><a href="https://www.linkedin.com/in/surana/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                     <li class="list-inline-item"><a href="https://twitter.com/surana_h"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                     <li class="list-inline-item"><a href="https://scholar.google.com/citations?user=xl24xGEAAAAJ&hl=en"><i class="ai ai-google-scholar" aria-hidden="true"></i></a></li>
+                  </ul>
+                  <hr class="hr-light">
+                  <p class="text-light mb-3 f-15">Harshit Surana is a co-founder at DeepFlux Inc. He has built and scaled ML systems and engineering pipelines at several Silicon Valley startups as a founder and an advisor. He studied computer science at Carnegie Mellon University where he worked with the MIT Media Lab on common sense AI. His research in NLP has received over 200 citations.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+            <!-- About Author End -->
+
+
+
+
+      <!-- What you will learn Start -->
+      <section class="section">
+         <div class="container">
+         <div class="row align-items-center">
+            <div class="col-lg-12">
+               <div class="hero-title pr-lg-5">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <h1 class="hero-1-title mb-4 text-dark">What you will learn?</h1>
+                        <p class="lead text-dark mb-4 pb-2">
+                           Through the course of the book, we will guide you through the process of building real-world NLP solutions embedded in larger product setups via a compendium of over 450 references. With this book, you’ll: 
+                        </p>
+                        <ul class="text-dark mb-4 pb-2">
+                           <li class="lead">Understand the wide spectrum of problem statements, tasks, and solution approaches within NLP
+                           </li>
+                           <li class="lead">Implement and evaluate different NLP applications using machine learning and deep learning methods
+                           </li>
+                           <li class="lead">Fine-tune your NLP solution based on your business problem and industry vertical
+                           </li>
+                           <li class="lead">Evaluate various algorithms and approaches for NLP product tasks, datasets, and stages
+                           </li>
+                           <li class="lead">Produce software solutions following best practices around release, deployment, and DevOps for NLP systems
+                           </li>
+                           <li class="lead">Understand best practices, opportunities and the roadmap for NLP from a business and product leader’s perspective. 
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+<!-- What you will learn End -->
+
+
+<!-- Get the book Start-->
+
+      <section class="section text-center bg-dark pb-0" id="buythebook" >
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-lg-6 col-md-8">
+                  <div class="title text-center mb-5">
+                     <h1 class="hero-1-title mb-4 text-light">Get the book</h1>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 " >
+                  <div class="f-box">
+                     <img src="images/book.png" height="200">
+                     <div style="font-size: 120%; padding-top: 30px;">Amazon</div>
+                     <div class="text-center">
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" style="background-color: #f9680e;border-color: #ff914c; margin-top: 20px;" href="https://www.amazon.com/Practical-Natural-Language-Processing-Pragmatic-dp-1492054054/dp/1492054054/ref=mt_other?_encoding=UTF8&me=&qid=1592972893">Purchase</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 mx-auto" >
+                  <div class="f-box">
+                     <img src="images/book.png" height="200">
+                     <div style="font-size: 120%; padding-top: 30px;" >O’Reiily Safari</div>
+                     <div class="text-center">
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" style="background-color: #f9680e;border-color: #ff914c; margin-top: 20px;" href="https://learning.oreilly.com/library/view/practical-natural-language/9781492054047/">Read Online</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 mx-auto" >
+                  <div class="f-box">
+                     <img src="images/book.png" height="200">
+                     <div style="font-size: 120%; padding-top: 30px;" >Kindle</div>
+                     <div class="text-center">
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" style="background-color: #f9680e;border-color: #ff914c; margin-top: 20px;" href="https://www.amazon.com/Practical-Natural-Language-Processing-Pragmatic-dp-1492054054/dp/1492054054/ref=mt_other?_encoding=UTF8&me=&qid=">Purchase</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Get the book End -->
+
+
+
+      <!-- Footer Start -->
+      <section class="section bg-dark footer">
+         <div class="container">
+            <!-- <div class="row justify-content-center">
+               <div class="col-lg-7">
+                   <div class="row">
+                       <div class="col-4">
+                           <div class="subscribe-icon">
+                               <img src="images/icon/1.png" alt="" class="img-fluid mx-auto d-block">
+                           </div>
+                       </div>
+                       <div class="col-4">
+                           <div class="subscribe-icon">
+                               <img src="images/icon/2.png" alt="" class="img-fluid mx-auto d-block">
+                           </div>
+                       </div>
+                       <div class="col-4">
+                           <div class="">
+                               <img src="images/icon/3.png" alt="" class="img-fluid mx-auto d-block">
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               </div>-->
+            <hr class="hr-light">
+            <div class="row justify-content-center">
+               <div class="col-lg-6">
+                  <div class="row ">
+                     <div class="col-md-12">
+                        <div class="text-center text-light">
+                           <p class="mb-0 f-15">2020 © Practical Natural Language Processing.</p>
+                           <p class="mb-0 f-15"> Made with <i class="fa fa-heart" aria-hidden="true"></i>
+                              in Bangalore by <a href="https://codetrappers.com/" target="_blank">CodeTrappers</a> 
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Footer End -->
+
+
+
+      <!-- javascript -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/scrollspy.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+
+      <script src="js/jquery.easing.min.js"></script>
+      <!-- Main Js -->
+      <script src="js/app.js"></script>
+   </body>
+</html>
